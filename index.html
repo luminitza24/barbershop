@@ -3,55 +3,98 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-      <link rel="stylesheet" href="styles.css/"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
     />
     <title>Barbers</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="images/Logo (1).jpg">Logo, un brici</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Services and prices</a></li>
-          <li><a href=""></a>Barbers</li>
-          <li><a href="">Contacts</a></li>
+    <div class="container">
+    <div class="nav-container">
+      <div class="social-links">
+        <ul class="social-links-list">
+          <li class="social-links-item line"><img src="images/Rectangle 4.png" alt="linie link"
+            /></li>
+          <li class="social-links-item"> <a class="link" href="www.instagram.com">Instagram</a></li>
+          <li class="social-links-item"><a class="link" href="www.youtube.com">Youtube</a></li>
         </ul>
-      </nav>
-      <a href="tel:+380441111111">+38 044 111 11 11</a>
-      <button type="button">Online Booking</button>
-    </header>
+        <a class="logo" href="index.html"> <img src="images/Logo.jpg" alt="logo frizeriei"
+          /></a>
+      </div>
+    <div class="header-container">
+      <header class="nav-section">
+          <nav>
+            <ul class="nav-list unstyled-list">
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services and prices"
+                  >Services and prices</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#our team">Barbers</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="">Contacts</a></li>
+            </ul>
+          </nav>
+          <ul class="contact-list unstyled-list">
+            <li class="contact-item">
+              <a class="contact-link" href="tel:+380441111111"
+                >+38 044 111 11 11</a
+              >
+            </li>
+            <li class="contact-item">
+              <button class="nav-button" type="button">Online Booking</button>
+            </li>
+          </ul>
+        </header>
+      <section class="page-title">
+        <h3 class="subtitle">A hair salon for men in Kyiv</h3>
+        <h1 class="hero-title">BarberShop</h1>
+        <p class="site-descr">
+          We are experts in trendy men’s haircuts.<br />We work quickly,
+          carefully and with style.
+        </p>
+      </section>
+    </div>
+  </div>
+    <div class="container">
+      <section class="about-section">
+        <div class="about-images">
+          <img src="images/img 1.jpg" alt="Barbers at work" />
+          <img src="images/img 2 .jpg" alt="Barbers at work" />
+        </div>
+        <div class="about-content">
+          <h3 class="about-subtitle" id="about">ABOUT</h3>
+          <h2 class="section-subtitle">Best Barbershop in your city</h2>
+          <p class="about-paragraph">
+            If you want to add more confidence to your image, <br />you should
+            definitely visit us.
+          </p>
+          <p class="description">
+            We are a team that never stops at what has been achieved and are
+            thirsty for changes. And when you fall into the hands of our master,
+            you will never be the same again. We are a team that is always "on
+            the same wave" with clients. Therefore, we are always ready to
+            improve everyone who comes to us!
+          </p>
+          <button class="white-button" type="button">ONLINE BOOKING</button>
+        </div>
+      </section>
+    </div>
     <section>
-      <h3>A hair salon for men in Kyiv</h3>
-      <h1>BarberShop</h1>
-      <p>
-        We are experts in trendy men’s haircuts.<br />We work quickly, carefully
-        and with style.
-      </p>
-    </section>
-    <section>
-      <h3>ABOUT</h3>
-      <h2>Best Barbershop in your city</h2>
-      <img src="images/img 1 (1).jpg" alt="" />
-      <img src="images/img 2 (1).jpg" alt="" />
-      <p>
-        If you want to add more confidence to your image, you should definitely
-        visit us.
-      </p>
-      <p>
-        We are a team that never stops at what has been achieved and are thirsty
-        for changes. And when you fall into the hands of our master, you will
-        never be the same again. We are a team that is always "on the same wave"
-        with clients. Therefore, we are always ready to improve everyone who
-        comes to us!
-      </p>
-      <button type="button">Online booking</button>
-    </section>
-    <section>
-      <h3>SPEND YOUR TIME WITH THE BEST MASTERS</h3>
+      <h3 id="services and prices">SPEND YOUR TIME WITH THE BEST MASTERS</h3>
       <h2>Services and prices</h2>
       <dl>
         <dt>Men's haircut</dt>
@@ -90,7 +133,7 @@
     </section>
     <section>
       <h3>FOR TRUE ENJOYERS OF THE ATMOSPHERE</h3>
-      <h2>Our barbers</h2>
+      <h2 id="our team">Our barbers</h2>
       <ul>
         <li>
           <img src="images/artist/img1.jpg" alt="John Smith at work" />
