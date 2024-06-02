@@ -37,6 +37,7 @@ body {
 .header-container {
   width: 1070px;
   height: 680px;
+  border-color: 2px solid red;
 }
 .nav-container {
   max-width: 1200px;
@@ -46,23 +47,26 @@ body {
 .social-links {
   display: flex;
   flex-direction: column-reverse;
+  height: 680px;
   width: 138px;
   justify-content: space-between;
+
+  margin-left: 60px;
 }
 .social-links-list {
-  height: 270px;
-  width: 13.35px;
   list-style-type: none;
   display: flex;
   flex-direction: row;
   transform: rotate(-0.25turn);
 }
 .social-links-item {
-  margin: 10px 30px 30px 50px;
-  margin-right: 40px;
   font-size: 18px;
   line-height: 1.11;
   font-weight: 400px;
+  margin: 10px 10px 20px 50px;
+}
+.social-links-list::before {
+  content: url("../images/Rectangle\ 4.svg");
 }
 .line {
   transform: rotate(0.25turn);
@@ -237,6 +241,27 @@ body {
   color: white;
 }
 .services {
-  background-color: #111319;
-  background-image: url("../images/img.jpg");
+  background-image: url("../images/overlay.jpg");
+  width: 1600px;
+  height: 692px;
+}
+.services-title {
+  color: var(--white-color);
+  font-size: 42px;
+  font-style: bold;
+}
+#services {
+  margin-left: 20px;
+  padding-left: 20px;
+  color: #9da4bd;
+  font-family: open sans;
+  font-size: 11px;
+}
+#services::before {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  content: url("../images/Rectangle\ 5.svg");
+}
+.svg-services {
+  color: #9da4bd;
 }
