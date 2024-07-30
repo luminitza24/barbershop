@@ -259,11 +259,12 @@ body {
   color: var(--white-color);
   font-size: 42px;
   font-style: bold;
+  margin-left: 215px;
+  margin-top: 20px;
 }
 #services {
-  margin-left: 20px;
+  margin-left: 215px;
   padding-top: 140px;
-  padding-left: 120px;
   color: #9da4bd;
   font-family: open sans;
   font-size: 11px;
@@ -273,6 +274,25 @@ body {
   margin-bottom: 20px;
   content: url("../images/Rectangle\ 5.svg");
 }
-.svg-services {
-  margin: 80px 10px 10px 40px;
+.services-list {
+  border: 2px solid red;
+  margin-left: 215px;
+  padding-top: 40px;
+  display: inline-table;
+  color: #9da4bd;
+  grid-template-columns: 70% 30%;
+  grid-column: span 2;
+  font-size: 18px;
+  width: 570px;
+  height: 240px;
+  background-image: url("../images/Bg.jpg");
+}
+
+.services-desc {
+  padding-left: 40px;
+  padding-bottom: 20px;
+  justify-content: space-between;
+}
+.services-list:nth-child(4) {
+  grid-row: span 2;
 }
