@@ -13,7 +13,7 @@
   padding-inline-start: 0;
 }
 body {
-  font-family: open-sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 400px;
 }
@@ -21,9 +21,26 @@ body {
   margin: 0 auto;
   max-width: 1200px;
 }
+@media screen and (min-width: 600px){.about-btn{
+  display:none;
+
+}}
+
 .unstyled-list {
   list-style-type: none;
   margin-left: 50px;
+}
+@media screen and(min-width:600px) {
+  .nav-list{
+    display: none;
+  }
+  .contact-list{
+    display: none;
+  }
+  .social-links-list{
+    display: none;
+  }
+  
 }
 .nav-section {
   font-size: 12px;
@@ -254,11 +271,7 @@ body {
   background-color: #ff6c00;
   color: white;
 }
-.services {
-  background-image: url("../images/overlay.jpg");
-  width: 1600px;
-  height: 692px;
-}
+
 .services-title {
   color: var(--white-color);
   font-size: 42px;
@@ -279,37 +292,44 @@ body {
   content: url("../images/Rectangle\ 5.svg");
 }
 .services-list {
+  height: 270px;
   list-style-type: none;
   margin-top:44px;
-  margin-left: 215px;
+  margin-left:auto;
+  margin-right: auto;
   padding-top: 40px;
-  border:2px solid green;
-  -moz-column-count: 1;
-  -moz-column-gap: 50px;
-  -webkit-column-count: 1;
-  -webkit-column-gap: 50px;
-  column-count: 1;
-  column-gap: 50px;
   color: #9da4bd;
   font-size: 18px;
-  width:fit-content;
-  height: 240px;
-
-
+  border: 3px solid purple;
+  background-image: linear-gradient(
+    180deg,
+    #171a24 0%,
+    rgba(23, 26, 36, 0.2) 100%
+  );
+background-repeat:no-repeat;
+background-size: cover;
+}
+.services-container{
+  margin: 0 auto;
+  background-image: url("../images/overlay.jpg");
+  background-repeat:no-repeat;
+  background-size:cover ;
+}
+.services-list-cont{
+  display: flex;
+  flex-direction: row;
+  border:2px solid green;
 
 }
-
 .services-desc {
-display:flex;
+  margin-left: 50px;
+  display:flex;
+  justify-content: space-between;
   padding-left: 40px;
   padding-bottom: 20px;
 
 }
 
-.services-price{
-  align-items: flex-end;
-  border:3px solid blue;
-}
 .services-price::before{
   content: url("../images/Rectangle\ 6.svg");
 
