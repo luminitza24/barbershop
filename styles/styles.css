@@ -310,10 +310,13 @@ background-repeat:no-repeat;
 background-size: cover;
 }
 .services-container{
-  margin: 0 auto;
+  min-width: 320px;
+  max-width: 1600px;
+  margin: 0, auto;
   background-image: url("../images/overlay.jpg");
   background-repeat:no-repeat;
   background-size:cover ;
+  border:4px solid pink;
 }
 .services-list-cont{
   display: flex;
@@ -335,6 +338,6 @@ background-size: cover;
 
 }
 .services-btn{
-margin-left: 720px;
+margin-left: 520px;
   margin-top: 44px;
 }
