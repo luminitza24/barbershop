@@ -41,14 +41,14 @@
                 <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#services and prices"
+                <a class="nav-link" href="#services"
                   >Services and prices</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#our team">Barbers</a>
+                <a class="nav-link" href="#our-team">Barbers</a>
               </li>
-              <li class="nav-item"><a class="nav-link" href="">Contacts</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contacts">Contacts</a></li>
             </ul>
           </nav>
           <ul class="contact-list unstyled-list">
@@ -75,8 +75,8 @@
     <div class="container">
       <section class="about-section">
         <div class="about-images">
-          <img class="images" src="images/img 1.jpg" alt="Barbers at work" />
-          <img class="images" src="images/img 2 .jpg" alt="Barbers at work" />
+          <img class="images" src="images/img1.jpg" alt="Barbers at work" />
+          <img class="images" src="/images/img2 .jpg" alt="Barbers at work" />
         </div>
         <div class="about-content">
           <div class="about-title-cont">
@@ -100,8 +100,8 @@
         </div>
       </section>
     </div>
-    <div class="services-container">
     <section class="services">
+      <div class="services-container">
       <h3 id="services">SPEND YOUR TIME WITH THE BEST MASTERS</h3>
       <h2 class="services-title">Services and prices</h2>
       <div class="services-list-cont">
@@ -117,27 +117,29 @@
        <li class="services-desc ">Children's haircut (0 to 12y.0)<p class="services-price">from 300 uah.</p></li>
        <li class="services-desc">Camouflage of gray hair<p class="services-price">from 200 uah.</p></li>
         </ul></div>
-      <button class="nav-button services-btn"type="button">Online Booking</button>
-    </section>
+      <button class="nav-button services-btn" type="button">Online Booking</button>
     </div>
+    </section>
+
     <section>
-      <dl>
-        <dt>600<sup>+</sup></dt>
-        <dd>Satisfied customers per day</dd>
-        <dt>50<sup>+</sup></dt>
-        <dd>Awards for excelent service</dd>
-        <dt>20<sup>+</sup></dt>
-        <dd>Kyiv's best barbers</dd>
-        <dt>100<sup>+</sup></dt>
-        <dd>Gift's for regular customers</dd>
-      </dl>
+      <ul class="unstyled-list">
+        <li>600<sup>+</sup>
+        <p>Satisfied customers per day</p></li>
+        <li>50<sup>+</sup>
+        <p>Awards for excelent service</p></li>
+        <li>20<sup>+</sup>
+        <p>Kyiv's best barbers</p></li>
+        <li>100<sup>+</sup>
+        <p>Gift's for regular customers</p></li>
+      </ul>
       <h3>OLD TRADITIONAL SCHOOL</h3>
       <h2>Why people come to us?</h2>
       <p>Only good things are said about us.</p>
     </section>
-    <section>
+    <section id="our-team">
+      <div class="container">
       <h3>FOR TRUE ENJOYERS OF THE ATMOSPHERE</h3>
-      <h2 id="our team">Our barbers</h2>
+      <h2 >Our barbers</h2>
       <ul class="unstyled-list">
         <li>
           <img src="images/artist/img1.jpg" alt="John Smith at work" />
@@ -155,36 +157,37 @@
           <p>Extreme Barber</p>
         </li>
       </ul>
+    </div>
     </section>
-  </div>
-  <div class="container">
+
     <section class="pictures">
+      <div class="container">
       <h3>In Latin "Barba", Means Beard</h2>
       <ul class="unstyled-list">
         <li>
-          <img src="images/Rectangle 25.jpg" alt="man at work">
+          <img src="images/Rectangle25.jpg" alt="man at work">
         </li>
-        <li> <img src="images/Rectangle 26.jpg" alt="man at work"></li> <li>
-          <img src="images/Rectangle 27.jpg" alt="man at work">
-        </li> <li> <img src="images/Rectangle 28.jpg" alt="man at work"></li>
+        <li> <img src="images/Rectangle26.jpg" alt="man at work"></li> <li>
+          <img src="images/Rectangle27.jpg" alt="man at work">
+        </li> <li> <img src="images/Rectangle28.jpg" alt="man at work"></li>
       </ul>
+    </div>
     </section>
-  </div>
+  <section id="contacts">
   <div class="container">
-   
-    <form>
+   <form>
       <label for="Name">Name*  <input type="text" id="Name" name="Name" ></label>
     
       <label for="Phone">Phone*  <input type="Phone" id="Phone" name="Phone"></label>
     
       <label for="Message">Message
-        <textarea type="text" id="Message">
+        <textarea type="text" id="Message"></textarea>
       </label>
       <button class="nav-button" type="submit"></button>
     </form>
     <div class="adress">
       <h2>Contacts</h2>
-      <ul><li><a href="">st. Vasilkovaya, 7A
+      <ul class="unstyled-list"><li><a href="">st. Vasilkovaya, 7A
         Kiev, 08132</a></li>
         <li><a href="tel:+380441111111">
           +38 044 111 11 11
@@ -194,5 +197,6 @@
         <p> Every day from 9:00 to 22:00</p>
     </div>
   </div>
+</section>
   </body>
 </html>
