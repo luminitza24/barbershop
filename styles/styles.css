@@ -181,11 +181,11 @@ body {
   font-weight: 600px;
   font-size: 11px;
   line-height: 1.66;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   text-transform: uppercase;
 }
 .subtitle::before {
-  margin-right: 30px;
+  margin-right: 20px;
   content: url("../images/Rectangle5.svg");
 }
 .hero-title {
@@ -209,29 +209,30 @@ body {
   display: flex;
   flex-direction: row;
   max-width: 1200px;
-  height:685px;
+  height: 685px;
   padding-top: 120px;
   padding-bottom: 120px;
-margin-left: auto;
-margin-right: auto;
-  gap: 30px;}
+  margin-left: auto;
+  margin-right: auto;
+  gap: 30px;
+}
 
 .about-svg {
   color: black;
+  margin-top: 5px;
 }
 .section-subtitle {
   font-family: Raleway;
   font-style: Bold;
   font-size: 42px;
-  width:470px;
+  width: 470px;
   line-height: 1.16;
   margin-bottom: 20px;
   letter-spacing: 0.05em;
-  border:2px solid brown;
 }
 .about-title-cont {
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .about-images {
   display: flex;
@@ -252,12 +253,11 @@ margin-right: auto;
 
 .description {
   margin-right: 30px;
-  border:3px solid green;
   font-weight: 400px;
   font-size: 14px;
   line-height: 1.66;
   color: var(--pagr-color);
-  padding-right:90px ;
+  padding-right: 90px;
   margin-bottom: 40px;
 }
 .about-paragraph {
@@ -265,7 +265,7 @@ margin-right: auto;
   font-weight: 400px;
   font-size: 18px;
   line-height: 1.85;
-  width:470px;
+  width: 470px;
   color: var(--pagr-color);
   padding-bottom: 20px;
   letter-spacing: 2%;
@@ -280,10 +280,10 @@ margin-right: auto;
   box-sizing: border-box;
   padding: 12px 20px 12px 20px;
   letter-spacing: 0.09em;
-   border: 2px solid var(--brand-color);
-    border-radius: 25px;
-   background-color: transparent;
-    cursor: pointer;
+  border: 2px solid var(--brand-color);
+  border-radius: 25px;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .white-button:hover,
@@ -296,7 +296,7 @@ margin-right: auto;
   margin: 0;
 }
 .services-title {
-  width:470px;
+  width: 470px;
   height: 98px;
   color: var(--white-color);
   font-size: 42px;
@@ -355,16 +355,30 @@ margin-right: auto;
 
 .services-price {
   display: flex;
-  justify-content: center;
+  align-items: flex-end;
+  border: 3px solid red;
+  text-align: left;
 }
 .services-price::before {
   content: url("../images/Rectangle6.svg");
 }
 .services-btn {
-  margin-left: 520px;
+  margin-left: 700px;
   margin-top: 44px;
+  margin-bottom: 120px;
 }
 .right-list {
   margin-left: 50px;
   margin-right: auto;
+}
+.plus-item {
+  color: var(--brand-color);
+  margin-left: 2px;
+}
+.gift-items {
+  font-family: open sans;
+  font-size: 42px;
+  font-weight: bold;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
 }
