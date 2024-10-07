@@ -264,7 +264,7 @@ body {
   font-family: open sans;
   font-weight: 400px;
   font-size: 18px;
-  line-height: 1.85;
+  line-height:1.85em;
   width: 470px;
   color: var(--pagr-color);
   padding-bottom: 20px;
@@ -380,12 +380,16 @@ body {
   margin-left: 2px;
 }
 .gift-list{
-  display: flex;
-flex-direction: column;
+  width: 50%;
+  display:flex; 
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 129px;
+  margin-bottom: 129px;
+  margin-left: 85px;
   gap:30px;
 }
 .gift-items {
-  position: relative;
 width: 170px;
   height:133px;
   font-family: open sans;
@@ -393,9 +397,29 @@ width: 170px;
   font-weight: bold;
   line-height: 1.16;
   letter-spacing: 0.05em;
-  background-color:grey;
+  background-color:rgb(247, 247, 247);
+  text-align: center;
+}
+.gift-items:first-child{
+  position: relative;
+  top:-35px;
+}
+.gift-items:third-child{
+  position: relative;
+  top:-35px;
 }
 .customers-parag{
   font-family: open sans;
   font-size: 11px;
+margin:24px 20px 24px 20px;
+}
+.customers .about-title-cont{
+  margin-top: 129px;
+}
+.customers-content{
+  width:50%;
+  margin-bottom: 129px;
+}
+.images-list{
+  display:flex;
 }
