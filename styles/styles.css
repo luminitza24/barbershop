@@ -404,7 +404,7 @@ width: 170px;
   position: relative;
   top:-35px;
 }
-.gift-items:third-child{
+.gift-items:nth-child(3){
   position: relative;
   top:-35px;
 }
