@@ -23,8 +23,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction:row;
-  border: 4px solid pink;
+  flex-direction: row;
 }
 
 @media screen and (min-width: 600px) {
@@ -223,11 +222,13 @@ body {
   margin-top: 5px;
 }
 .section-subtitle {
+  display: flex;
   font-family: Raleway;
   font-style: Bold;
   font-size: 42px;
   width: 470px;
   line-height: 1.16;
+  margin-left: 0;
   margin-bottom: 20px;
   letter-spacing: 0.05em;
 }
@@ -250,6 +251,7 @@ body {
   font-size: 11px;
   line-height: 1.36;
   margin-left: 20px;
+  text-transform: uppercase;
 }
 
 .description {
@@ -265,7 +267,7 @@ body {
   font-family: open sans;
   font-weight: 400px;
   font-size: 18px;
-  line-height:1.85em;
+  line-height: 1.85em;
   width: 470px;
   color: var(--pagr-color);
   padding-bottom: 20px;
@@ -332,8 +334,9 @@ body {
   );
   background-repeat: no-repeat;
   background-size: cover;
+  content: normal;
 }
-.services{
+.services {
   background-image: url("../images/overlay.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -341,7 +344,6 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0, auto;
-
 }
 .services-container {
   min-width: 320px;
@@ -354,15 +356,10 @@ body {
 }
 .services-desc {
   display: flex;
-  align-items: flex-end;
+  justify-content: space-between;
+  align-items: self-end;
   padding-left: 40px;
   padding-bottom: 20px;
-}
-
-.services-price {
-  display: flex;
-  align-items: flex-end;
-  text-align: left;
 }
 .services-price::before {
   content: url("../images/Rectangle6.svg");
@@ -380,76 +377,78 @@ body {
   color: var(--brand-color);
   margin-left: 2px;
 }
-.gift-list{
+.gift-list {
   width: 50%;
-  display:flex; 
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 129px;
   margin-bottom: 129px;
   margin-left: 85px;
-  gap:30px;
+  gap: 30px;
 }
 .gift-items {
-width: 170px;
-height:140px;
-contain:content ;
+  width: 170px;
+  height: 140px;
+  contain: content;
   font-family: open sans;
   font-size: 42px;
   font-weight: bold;
   line-height: 1.16;
   letter-spacing: 0.05em;
-  background-color:rgb(247, 247, 247);
+  background-color: rgb(247, 247, 247);
   text-align: center;
   padding: 20px;
   box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
 }
-.gift-items:first-child{
+.gift-items:first-child {
   position: relative;
-  top:-35px;
+  top: -35px;
 }
-.gift-items:nth-child(3){
+.gift-items:nth-child(3) {
   position: relative;
-  top:-35px;
+  top: -35px;
 }
-.plus-item{
+.plus-item {
   font-size: 16px;
   font-weight: 600px;
   position: relative;
-  top:-25px;
+  top: -25px;
 }
-.numbers{
+.numbers {
   font-family: open sans;
   font-size: 42px;
-  font-weight:900px;
+  font-weight: 900px;
   letter-spacing: 5%;
 }
-.customers-parag{
+.customers-parag {
   text-align: center;
   font-family: open sans;
   font-size: 11px;
-margin:10px 24px 24px 20px;
+  margin: 10px 24px 24px 20px;
 }
 
-.customers .about-title-cont{
+.customers .about-title-cont {
   margin-top: 129px;
 }
-.customers-content{
-  width:50%;
+.customers-content {
+  width: 50%;
   margin-bottom: 129px;
 }
-.images-list{
-  display:flex;
+.images-list {
+  display: flex;
+  gap: 30px;
 }
-.ourteam-container{
+.ourteam-container {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-
   justify-content: center;
-  background-color:rgb(247, 247, 247) ;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(247, 247, 247);
 }
-.pictures-cont{
+.pictures-cont {
   display: flex;
   flex-direction: row;
   gap: 30px;
@@ -457,4 +456,87 @@ margin:10px 24px 24px 20px;
   flex-shrink: 1;
   justify-content: center;
   align-items: center;
+  margin-bottom: 120px;
+}
+.icon_grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+.social_icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  color: var(--black-color);
+  border-radius: 50%;
+  margin-top: 30px;
+}
+.social-link:hover,
+.social-link:active {
+  color: var(--brand-color);
+}
+.team {
+  margin: 0 auto;
+}
+.image-list-item {
+  width: 370px;
+  height: 502px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 120px;
+}
+.barbernames {
+  font-family: opensans;
+  font-size: 18px;
+  letter-spacing: 2%;
+  line-height: auto;
+  margin-top: 30px;
+  margin-bottom: 8px;
+}
+.barber-desc {
+  font-size: 14px;
+  color: var(--brand-color);
+}
+.ourteam-container .about-title-cont {
+  margin-top: 120px;
+}
+.pictures .about-title-cont {
+  margin-bottom: 44px;
+}
+.site-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 2px solid white;
+  gap: 30px;
+}
+.form-cont {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  background-color: #191c26;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 2px solid yellow;
+}
+.adress {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../images/overlay.jpg");
+}
+.form-name {
+  background-color: #191c26;
+  border-bottom: 1px solid var(--white-color);
+  color: var(--white-color);
 }
