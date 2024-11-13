@@ -3,6 +3,7 @@
   --black-color: #303030;
   --white-color: #fff;
   --pagr-color: #555555;
+  --greycolor:#9DA4BD;
 }
 
 * {
@@ -25,6 +26,7 @@ body {
   align-items: center;
   flex-direction: row;
 }
+
 
 @media screen and (min-width: 600px) {
   .about-btn {
@@ -519,8 +521,10 @@ body {
   flex-wrap: wrap;
   border: 2px solid white;
   gap: 30px;
+  height:634px;
 }
 .form-cont {
+ 
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -536,7 +540,30 @@ body {
   background-image: url("../images/overlay.jpg");
 }
 .form-name {
+  width:270px;
   background-color: #191c26;
+  border-bottom: 1px solid var(--greycolor);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: var(--greycolor);
+}
+.form-name:hover, .form-name:active{
+  border-top: none;
+  border-left: none;
+  border-right: none;
   border-bottom: 1px solid var(--white-color);
-  color: var(--white-color);
+  color:var(--white-color);
+}
+.form-textarea{
+  width:570px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid var(--greycolor);
+  color:var(--greycolor);
+  background-color: var(--black-color);
+}
+#contacts{
+  background-color: #191C26;
 }
