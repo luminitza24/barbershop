@@ -242,7 +242,6 @@ body {
   width: 470px;
   color: var(--pagr-color);
   letter-spacing: 2%;
-  border: 2px solid red;
 }
 .about-subtitle {
   font-weight: 600px;
@@ -636,10 +635,9 @@ body {
   color: var(--white-color);
 }
 .form-textarea {
-  width: 570px;
-  height: 76px;
+  width: 400px;
+  height: fit-content;
   text-transform: uppercase;
-  width: 570px;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -649,11 +647,18 @@ body {
   margin-left: 100px;
   background-color: var(--backgroundcolor);
 }
+.adress-list {
+  margin-left: 50px;
+  padding-top: 30px;
+}
 
 .contact {
   margin-left: 320px;
   margin-top: 130px;
   letter-spacing: 5%;
+}
+.services-title {
+  margin-top: 120px;
 }
 #contacts {
   padding: 0;
@@ -666,7 +671,8 @@ body {
   line-height: 1.33;
   text-decoration: none;
   letter-spacing: 0.1em;
-  margin: 100px 100px, 20px, 20px;
+  margin-top: 100px, 100px, 50px, 50px;
+  m
 }
 .footer-link:hover,
 .footer-link:focus,
